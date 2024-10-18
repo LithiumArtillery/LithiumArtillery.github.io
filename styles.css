@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*---------------- ------------ resets ---------------- ------------ */
+:root{
+    /* Color */
+    --colorbackground:#010101;
+    --conteinerbackground:#121212;
+    --colorFonts:#fff;
+    --colorEspecialBotton:#F0E9DC;
+    --colorTransparente:rgba(38, 38, 38, 0.2);
+    --colorCardsSearch:rgba(14, 24, 49, 0.061);
+    --colorCardBackgrundUpdate:#5999A5;
+    --colorhalfSecionCard:#5BADA9;
+    --colorInactiveModule:#2c2c2c;
+    /* Fonts */
+    --FontRoboto:"Roboto", sans-serif;
+   
+
+}
+
+html{
+    background-color: var(--colorbackground);
+    color: var(--colorFonts);
+    position: relative;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Reset Links */
+  
+.Reset_Links{
+    text-decoration:none;
+    color: var(--colorFonts);
+}
+
+
+/* Resets buttons */
+
+.reset_button_styles-to_icos{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*---------------- ------------ FONTS ---------------- ------------*/
+
+
+/* Size */
+.R24{
+    font-family: var(--FontRoboto);
+    font-size: 24px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.R16{
+    font-family: var(--FontRoboto);
+    font-size: 16px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.R15{
+    font-family: var(--FontRoboto);
+    font-size: 15px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.R9{
+    font-family: var(--FontRoboto);
+    font-size: 9px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.PR16{
+    font-family: var(--FontRoboto);
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.R11{
+    font-family: var(--FontRoboto);
+    font-size: 11px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.R8{
+    font-family: var(--FontRoboto);
+    font-size: 8px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.R10{
+    font-family: var(--FontRoboto);
+    font-size: 10px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+/* Fonts */
+
+.NewFontDeterminate-MuseoModerno{
+    font-family: "MuseoModerno", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+
+/*--------------------------------------------------------*/
+
+
+
+/*---------------- ------------ Menu ---------------- ------------*/
+
+.header{
+    position:sticky;
+    z-index: 99999;
+    width: 98.5%;
+    height: 43px;
+    background-color: var(--conteinerbackground);
+    margin-top: 0.2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.6rem;
+    padding-bottom: 0.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    top: 0;
+}
+
+
+.menu_seeker{ 
+    position: fixed;
+    background-color: var(--colorTransparente);
+    backdrop-filter: blur(2px);
+    border-radius: 17px;
+    width: 95%;
+    padding: 1rem;
+    left: 0;
+    right: 0;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 55px;
+    z-index: 9999;
+    display: grid;
+    row-gap: 1rem;
+    grid-auto-rows: max-content;
+    overflow-y: auto;
+
+}
+
+.Remove{
+    display: none;
+    transition: ease-in;
+}
+
+
+.Menu-header{
+    display: flex;
+    
+}
+
+.Menu-Grid{
+    background-color: var(--colorCardsSearch);
+    min-height: 240px;
+    border-radius: 15px;
+    padding: 0.7rem;
+    backdrop-filter: blur(16px);
+    transition: ease-in;
+}
+
+.Menu-Grid:hover{
+    border: solid 0.09px rgba(255, 255, 255, 0.44);
+}
+
+
+.stylesFirst-Links{
+    color: var(--colorFonts);
+
+}
+
+
+.search-Menu{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1fr, auto);
+    color: var(--colorFonts);
+
+}
+
+.Input-seeker{
+    color: var(--colorFonts);
+    border: none;
+    background-color: var(--conteinerbackground);
+    display: inline-block;
+    height: 28px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 0.8rem;
+    color: var(--colorFonts);
+    z-index: 555;
+    outline: none;
+    
+
+}
+
+
+.Input-seeker-Button{
+    display: none;
+    
+}
+
+.input-button-styles{
+    display: inline-block;
+
+}
+
+.input-button-styles-ICO{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    max-width: 86px;
+    background-color: #000000;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+
+/* Input Output Menu BUtton */
+
+.buttom-menuOutInp{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: ease-in;
+    
+}
+
+.buttom-menuOutInp:active{
+    transform: scale(0.9);
+}
+
+
+.Mode_ico_display_none{
+    display: none;
+}
+
+/* Chenger Background */
+
+
+
+
+
+/*--------------------------------------------------------*/
+
+
+
+
+/*---------------- ------------ Botton syles ---------------- ------------*/
+
+/* --------------------------------- DROP_DOWN with dependencies---------------------------------------------- */
+
+.B-DROP_DOWN{
+    background-color: var(--conteinerbackground);
+    color: var(--colorFonts);
+
+    width: 240px;
+    height: 46px;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+}
+
+.B-DROP_DOWN::-webkit-scrollbar{
+    width: 15px;
+    background-color: #1a1a1a;
+    height: 10px;
+    border-end-end-radius: 15px;
+    border-top-right-radius: 15px;
+    scrollbar-width: thin;
+}
+
+/* B-DROP_DOWN-with_Dependencies */
+
+.B-DROP_DOWN-with_Dependencies{
+    display: inline-block;
+    transition: all 300ms ease-in;
+    transform: rotate(0deg); /* Inicialmente sin rotación */
+    cursor: pointer;
+  }
+
+  .B-DROP_DOWN-with_Dependencies-input[type="checkbox"]:checked + .B-DROP_DOWN .B-DROP_DOWN-with_Dependencies {
+    transform: rotate(180deg); /* Rotación de 180 grados */
+}
+
+.inputNoneB-Drop{
+    display: none;
+}
+
+.B-DROP_DOWN-with_Dependencies-input:checked ~ .B-DROP_DOWN{
+  min-height: 287px;
+  align-items: flex-start;
+  position: relative;
+  overflow-y: auto;
+ border-end-end-radius: 15px;
+ border-top-right-radius: 15px;
+
+}
+
+.B-DROP_DOWN-Content{
+display: none; /* Inicialmente oculto */
+position: absolute;
+margin-top: 50px;
+
+}
+
+.B-DROP_DOWN-Content p{
+    display: inline-block;
+
+}
+
+.IMG-AUTOR{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #0A0A0A;
+    
+}
+
+.IMG-autor-After{
+    object-fit:cover;
+    object-position:top;
+    width: 100%;
+   height: 100%;
+   border-radius: 50%;    
+}
+
+.B-DROP_DOWN-with_Dependencies-input:checked + .B-DROP_DOWN .B-DROP_DOWN-Content {
+    display: inline-block; /* Muestra el contenido cuando el checkbox está marcado */
+
+}
+
+.gratitude-ram{
+color: #ff0000;
+}
+
+/* --------------------------------------BUTTON UNIVERSAL----------------------------------------- */
+
+
+
+
+.Button-styles-Universal{
+background-color: var(--conteinerbackground);
+border: none;
+color: var(--colorFonts);
+padding: 0.1rem;
+min-width: 84px;
+min-height: 19px;
+transition: ease-in-out;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.Button-styles-Universal:active{
+    transform: scale(1.1);
+}
+
+
+/* ------------------------------------------------------------------------------- */
+
+
+/* -----------------------------------Main-------------------------------------------- */
+
+
+
+
+
+
+    /* FIRST CONTENT */
+.Update_News{
+
+height: 231px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+
+.update-date{  
+display: grid;
+grid-template-columns: 130px 159px;
+background-color: var(--colorCardBackgrundUpdate);
+border-radius: 9px;
+
+
+}
+
+
+
+.Section-half-Information{
+    width: 139px;
+    height: 153px;
+    padding: 0.4rem;
+    border-top-left-radius: 9px;
+    border-end-start-radius: 9px;
+    background-color: var(--colorhalfSecionCard);
+    box-shadow: 7px 0px 48px #000000;
+    position: relative;
+    
+}
+
+.Animation_updateNew{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+}
+
+.drawing-UpdateNew{
+    width: 91%;
+    height: 91%;
+
+}
+
+.Button-Espceial{ 
+ background-color: #84C597;
+ color: var(--colorEspecialBotton);
+ border: none;
+ height: 13px;
+ min-width: 60px;
+ border-radius: 3px;
+}
+
+.Button-Espceial-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Part_ADD-uPDATE{
+    padding: 0.4rem;
+    margin-left: 0.4rem;
+
+}
+
+.information_content{
+
+padding: 1rem;
+
+}
+
+
+/* Dinamic agenda */
+
+.dynamic-agenda{
+    margin-top: 1rem;
+    
+    
+}
+
+.H1-sty{
+
+    position: sticky;  
+    top: 42px;
+    background-color: var(--colorbackground);
+    margin-bottom: 0.3rem;
+    margin-top: 0.4rem;
+
+}
+
+
+.P-A1{
+padding-bottom: 0.4rem;
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------- */
+
+
+
+
+/* ----------------------------------- Footer -------------------------------------------- */
+
+.footer{
+background-color: var(--conteinerbackground);
+display: grid;
+grid-template-columns: 50% 50%;
+height: 67px;
+padding: 0.3rem;
+
+}
+.Footer-img-informativa{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+
+.ICo-MYico{
+width: 3rem;
+}
+
+.ICO-myico-SVG{
+    width: 74%;
+    height: 74%;
+}
+
+
+
+/* ------------------------------------------------------------------------------- */
